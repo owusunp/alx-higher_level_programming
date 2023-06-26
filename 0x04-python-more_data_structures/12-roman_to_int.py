@@ -1,4 +1,8 @@
 def roman_to_int(roman_string):
+    if isinstance(roman_string, str):
+        k = 0
+    else:
+        return 0
     sum = 0
     if "IV" in roman_string:
         roman_string = roman_string.replace("IV", "")
