@@ -14,3 +14,5 @@ try:
     print(my_square.__size)
 except Exception as e:
     print(e)
+
+python3 -c 'print(__import__("my_module").__doc__)'
