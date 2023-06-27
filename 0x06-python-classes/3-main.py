@@ -15,4 +15,4 @@ except Exception as e:
     print(e)
 
 my_square_2 = Square(5)
-print("Area: {}".format(my_square_2.area())
+print("Area: {}".format(my_square_2.area()))
