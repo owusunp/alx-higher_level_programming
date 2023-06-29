@@ -78,12 +78,10 @@ class Rectangle:
             return ""
         fill_hash = ""
         
-        for i in range(self.__height - 1):
+        for i in range(self.__height):
             for j in range(self.__width):
                 fill_hash += "#" 
                 
             fill_hash += "\n"
-        for i in range(1):
-            for j in range(self.__width):
-                fill_hash += "#"
-        return fill_hash
+    
+        return fill_hash[:-1]
