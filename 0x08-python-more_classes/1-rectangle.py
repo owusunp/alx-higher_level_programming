@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """ more on rectangle """
+
+
 class Rectangle:
     def __init__(self, width=0, height=0):
         """this func acting as a constructor """
