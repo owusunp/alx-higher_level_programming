@@ -5,6 +5,20 @@ class Rectangle:
         """this func acting as a constructor """
         self.width = width
         self.height = height
+        
+    def __str__(self):
+        """  string presentation """
+        if self.__width == 0 or self.__height == 0:
+            return ""
+        fill_hash = ""
+        
+        for i in range(self.__height):
+            for j in range(self.__width):
+                fill_hash += "#" 
+                
+            fill_hash += "\n"
+    
+        return fill_hash[:-1]
 
     @property
     def width(self):
@@ -72,15 +86,4 @@ class Rectangle:
             return 0
         return 2*self.__width + 2*self.__height
 
-    def __str__(self):
-        """Returns an informal and nicely printable string representation
-        of a Rectangle instance, filled with the '#' character."""
-        if self.__height == 0 or self.__width == 0:
-            return ''
-        rec_str = ''
-        for i in range(self.__height):
-            for j in range(self.__width):
-                rec_str += '#'
-            rec_str += '\n'
-        return rec_str[:-1]
 
