@@ -1,10 +1,12 @@
 #!/usr/bin/python3
 """ more on rectangle """
 class Rectangle:
+    """ couldn be today to cool"""
+
     def __init__(self, width=0, height=0):
         """this func acting as a constructor """
-        self.width = width
-        self.height = height
+        self.__width = width
+        self.__height = height
         
     def __str__(self):
         """  string presentation """
