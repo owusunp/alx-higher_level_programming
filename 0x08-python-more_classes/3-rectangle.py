@@ -74,13 +74,15 @@ class Rectangle:
 
     def __str__(self):
         """  string presentation """
+        fill_hash = ""
         if self.__width == 0 or self.height == 0:
             return 0
         for i in range(self.__height - 1):
             for j in range(self.__width):
-                print("{:s}".format("#"), end="")
-            print()
+                fill_hash += "#" 
+                
+            fill_hash += "\n"
         for i in range(1):
             for j in range(self.__width):
-                print("{:s}".format("#"), end="")
-        return str("")
+                fill_hash += "#"
+        return fill_hash
