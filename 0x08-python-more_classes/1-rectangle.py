@@ -5,17 +5,17 @@ Defines a Rectangle class.
 
 
 class Rectangle:
-    """Rectangle class defined by width and height."""
+    """A class representing a rectangle."""
 
     def __init__(self, width=0, height=0):
-        """Initializes a Rectangle instance.
+        """Initialize the Rectangle object.
 
         Args:
-            width: width of the rectangle
-            height: height of the rectangle
+            width (int): The width of the rectangle. Defaults to 0.
+            height (int): The height of the rectangle. Defaults to 0.
         """
-        self.width = width
-        self.height = height
+        self.__width = width
+        self.__height = height
 
     @property
     def width(self):
