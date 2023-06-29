@@ -77,8 +77,7 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return ""
         fill_hash = ""
-        if self.__width == 0 or self.height == 0:
-            return 0
+        
         for i in range(self.__height - 1):
             for j in range(self.__width):
                 fill_hash += "#" 
