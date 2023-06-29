@@ -74,6 +74,8 @@ class Rectangle:
 
     def __str__(self):
         """  string presentation """
+        if self.__width == 0 or self.__height == 0:
+            return ""
         fill_hash = ""
         if self.__width == 0 or self.height == 0:
             return 0
