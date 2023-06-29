@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-""" rectangle time """
+""" rectangle time start more classes """
 
 class Rectangle:
-    """empty class """
+    """empty class does nothing """
     pass
 
