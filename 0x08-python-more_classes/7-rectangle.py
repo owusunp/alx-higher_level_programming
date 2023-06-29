@@ -21,7 +21,7 @@ class Rectangle:
         
         for i in range(self.__height):
             for j in range(self.__width):
-                fill_hash += str(Rectangle.print_symbol) 
+                fill_hash += Rectangle.print_symbol 
                 
             fill_hash += "\n"
     
