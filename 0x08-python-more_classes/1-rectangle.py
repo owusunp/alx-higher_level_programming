@@ -35,11 +35,11 @@ class Rectangle:
             TypeError: If the value is not an integer.
             ValueError: If the value is less than 0.
         """
+
         if isinstance(value, int):
             if value < 0:
                 raise ValueError("width must be >= 0")
-            else:
-                self.__width = value
+            self.__width = value
         else:
             raise TypeError("width must be an integer")
 
