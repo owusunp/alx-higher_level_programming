@@ -44,7 +44,7 @@ class Rectangle:
             else:
                 self.__height = value
         else:
-            raise TypeError("width must be an integer")    
+            raise TypeError("height must be an integer")    
 
     def area(self):
         """ return the area of a rectangle """
