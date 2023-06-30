@@ -23,7 +23,7 @@ class Rectangle:
     def width(self, value):
         """ it sets the width """
         if isinstance(value, int):
-            if width < 0:
+            if value < 0:
                 raise ValueError("width must be >= 0")
             else:
                 self.__width = value
@@ -39,7 +39,7 @@ class Rectangle:
     def height(self, value):
         """ it sets the height """
         if isinstance(value, int):
-            if height < 0:
+            if value < 0:
                 raise ValueError("height must be >= 0")
             else:
                 self.__height = value
@@ -72,10 +72,11 @@ class Rectangle:
 
     def __repr__(self):
         """ returns the human readable string representation """
-        return f"({self.__width}, {self.__height})"
+        return f"Rectangle({self.__width}, {self.__height})"
 
     def __del__(self):
         """ message printed when an instance is deleted """
+        Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
     
     @staticmethod
