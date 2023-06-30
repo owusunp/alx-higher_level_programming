@@ -63,8 +63,8 @@ class Rectangle:
             return ""
 
         accept_all = ""
-        for i in range(self.__width):
-            for j in range(self.__height):
+        for i in range(self.__height):
+            for j in range(self.__width):
                 accept_all += str(self.print_symbol)
             accept_all += "\n"
 
