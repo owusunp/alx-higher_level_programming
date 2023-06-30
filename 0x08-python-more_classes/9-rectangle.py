@@ -1,4 +1,4 @@
-#!/usr/bin/python3i
+#!/usr/bin/python3
 
 """ this id the final project on recttangle class"""
 
