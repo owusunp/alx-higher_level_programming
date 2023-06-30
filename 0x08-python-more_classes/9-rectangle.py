@@ -63,8 +63,8 @@ class Rectangle:
             return ""
 
         accept_all = ""
-        for i in range(self.__height):
-            for j in range(self.__width):
+        for i in range(self.__width):
+            for j in range(self.__height):
                 accept_all += str(self.print_symbol)
             accept_all += "\n"
 
@@ -100,13 +100,4 @@ class Rectangle:
     def square(cls, size=0):
         """ returns a new Rectangle instance with width == height == size """
         return cls(size, size)
-
-
-
-
-
-
-
-                
-
 
